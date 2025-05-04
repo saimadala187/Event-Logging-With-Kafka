@@ -21,8 +21,8 @@ services:
   mysql:
     image: mysql:8.0
     environment:
-      MYSQL_DATABASE: event_db
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ${MYSQL_DB}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "3306:3306"
     healthcheck:
@@ -45,10 +45,7 @@ services:
         condition: service_healthy
       kafka:
         condition: service_started
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/event_db
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+    
     ports:
       - "8082:8082"
 
