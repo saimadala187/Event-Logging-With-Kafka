@@ -28,3 +28,7 @@ This is a real-time event logging system using Microservices architecture.
 
 ```bash
 docker-compose up --build
+
+
+![image](https://github.com/user-attachments/assets/20889537-b511-4107-a009-8a4d0852ca4a)
+
