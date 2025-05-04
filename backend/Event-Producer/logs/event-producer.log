@@ -1,0 +1,22 @@
+2025-05-04T00:08:51.585+05:30  INFO 8436 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2025-05-04T00:35:40.157+05:30  INFO 8436 --- [http-nio-8081-exec-4] c.e.E.P.Service.KafkaProducerService     : 📤 Sending event to topic [order-events]: {"userId":"109","eventType":"Order Fail","description":"User 109 Order Failed"}
+2025-05-04T00:40:39.159+05:30  INFO 8436 --- [http-nio-8081-exec-8] c.e.E.P.Service.KafkaProducerService     : 📤 Sending event to topic [order-events]: {"userId":"119","eventType":"Order Fail","description":"User 119 Order Failed"}
+2025-05-04T00:49:20.758+05:30  INFO 8436 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-04T00:49:20.821+05:30  INFO 8436 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-04T00:49:20.849+05:30  INFO 8436 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-05-04T00:49:20.903+05:30  INFO 8436 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-05-04T00:49:20.903+05:30  INFO 8436 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-04T00:49:20.906+05:30  INFO 8436 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-05-04T00:49:20.906+05:30  INFO 8436 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-05-04T00:49:20.912+05:30  INFO 8436 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2025-05-04T01:08:46.806+05:30  INFO 3588 --- [main] c.e.E.Producer.EventProducerApplication  : Starting EventProducerApplication using Java 23.0.1 with PID 3588 (D:\Event Logging Microservice with Kafka\backend\Event-Producer\target\classes started by saiku in D:\Event Logging Microservice with Kafka\backend\Event-Producer)
+2025-05-04T01:08:46.811+05:30  INFO 3588 --- [main] c.e.E.Producer.EventProducerApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-05-04T01:08:50.214+05:30  INFO 3588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-04T01:08:50.246+05:30  INFO 3588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-04T01:08:50.247+05:30  INFO 3588 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-04T01:08:50.360+05:30  INFO 3588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-04T01:08:50.361+05:30  INFO 3588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3293 ms
+2025-05-04T01:08:51.770+05:30  INFO 3588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-04T01:08:51.791+05:30  INFO 3588 --- [main] c.e.E.Producer.EventProducerApplication  : Started EventProducerApplication in 6.323 seconds (process running for 7.928)
+2025-05-04T01:09:51.481+05:30  INFO 3588 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-04T01:09:51.489+05:30  INFO 3588 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
